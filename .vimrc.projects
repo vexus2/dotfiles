@@ -1,0 +1,15 @@
+" ファイルが選択されたら、ウィンドウを閉じる
+":let g:proj_flags = 'imstc'
+
+" <Space>Pでプロジェクトをトグルで開閉する
+:nmap <silent> <Space>P <Plug>ToggleProject
+
+" <Space>pでデフォルトプロジェクトを開く
+:nmap <silent> <Space>p :Project<CR>
+
+"カレントディレクトリにプロジェクト管理ファイルがあったら読み込む
+if getcwd() != $HOME
+  if filereadable(getcwd() . '/.vimprojects')
+      Project .vimprojects
+  endif
+endif
