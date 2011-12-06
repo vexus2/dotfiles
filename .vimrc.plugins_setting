@@ -416,8 +416,24 @@ let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 "-----------------------------------
 " NERDTreeToggle
 "-----------------------------------
+" 開いた際に自動的に開く
+autocmd VimEnter * NERDTree
+
 " Space2回でツリー表示
 nmap <Space><Space> :NERDTreeToggle<CR>
+
+"隠しファイルを表示
+let g:NERDTreeShowHidden = 1
+
+"色をカラフルに
+let g:NERDChristmasTree = 1
+
+"現在の行を強調表示
+let g:NERDTreeHighlightCursorline = 1
+
+let g:NERDTreeWinPos = 'left'
+
+let g:NERDTreeWinSize = 25
 
 "-----------------------------------
 " EasyMotion

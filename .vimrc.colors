@@ -14,9 +14,9 @@ elseif &term =~ "xterm-color"
 endif
 
 "ポップアップメニューのカラーを設定
-"hi Pmenu guibg=#666666
-"hi PmenuSel guibg=#8cd0d3 guifg=#666666
-"hi PmenuSbar guibg=#333333
+hi Pmenu guibg=#666666
+hi PmenuSel guibg=#8cd0d3 guifg=#666666
+hi PmenuSbar guibg=#333333
 
 " ハイライト on
 syntax enable
@@ -26,6 +26,7 @@ hi Pmenu ctermbg=white ctermfg=darkgray
 hi PmenuSel ctermbg=blue ctermfg=white
 hi PmenuSbar ctermbg=0 ctermfg=9
 
+
 imap {} {}<Left>
 imap [] []<Left>
 imap () ()<Left>
@@ -33,3 +34,5 @@ imap “” “”<Left>
 imap ” ”<Left>
 imap <> <><Left>
 imap “ “<Left>
+:colorscheme desert_csapprox
+" :colorscheme mrkn256
