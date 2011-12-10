@@ -30,9 +30,9 @@ Bundle 'operator-replace'
 Bundle 'operator-user'
 Bundle 'quickrun.vim'
 Bundle 'thinca/vim-ref'
-Bundle 'rails.vim'
+Bundle 'tpope/vim-rails.git'
 Bundle 'ref.vim'
-Bundle 'ruby.vim'
+"Bundle 'ruby.vim'
 Bundle 'smartchr'
 Bundle 'smartword'
 Bundle 'surround.vim'
@@ -58,6 +58,7 @@ Bundle 'kana/vim-textobj-indent.git'
 Bundle 'kana/vim-textobj-function.git'
 Bundle 'kana/vim-textobj-fold.git'
 Bundle 'thinca/vim-guicolorscheme.git'
+Bundle 'vim-scripts/guicolorscheme.vim.git'
 Bundle 'Shougo/vimshell.git'
 Bundle 'Shougo/vimproc.git'
 Bundle 'Shougo/unite.vim'
@@ -75,8 +76,8 @@ Bundle 'yuroyoro/vim-scala'
 Bundle 'yuroyoro/vimdoc_ja'
 
 Bundle 'gmarik/vundle'
-"Bundle 'CSApprox'
+" Bundle 'CSApprox'
 Bundle "git://github.com/Shougo/vim-easymotion.git"
-"Bundle "mrkn256.vim"
-
+Bundle "mrkn256.vim"
+Bundle "git://github.com/vim-ruby/vim-ruby.git"
 filetype plugin indent on

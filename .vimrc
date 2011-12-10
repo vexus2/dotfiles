@@ -22,7 +22,7 @@ source /Users/vexus2/Dropbox/dotfiles/.vimrc.colors
 "編集関連
 source /Users/vexus2/Dropbox/dotfiles/.vimrc.editing
 "プロジェクト管理系
-source /Users/vexus2/Dropbox/dotfiles/.vimrc.projects
+"source /Users/vexus2/Dropbox/dotfiles/.vimrc.projects
 
 " エンコーディング関連
 source /Users/vexus2/Dropbox/dotfiles/.vimrc.encoding

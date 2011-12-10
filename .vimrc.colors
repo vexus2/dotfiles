@@ -26,7 +26,6 @@ hi Pmenu ctermbg=white ctermfg=darkgray
 hi PmenuSel ctermbg=blue ctermfg=white
 hi PmenuSbar ctermbg=0 ctermfg=9
 
-
 imap {} {}<Left>
 imap [] []<Left>
 imap () ()<Left>
@@ -34,5 +33,12 @@ imap “” “”<Left>
 imap ” ”<Left>
 imap <> <><Left>
 imap “ “<Left>
-:colorscheme desert_csapprox
-" :colorscheme mrkn256
+
+
+"autocmd VimEnter * :colorscheme mrkn256
+"autocmd VimEnter * :GuiColorScheme desert
+
+set term=builtin_linux
+set ttytype=builtin_linux
+colorscheme desert
+syntax on

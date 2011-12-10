@@ -2,14 +2,14 @@
 ":let g:proj_flags = 'imstc'
 
 " <Space>Pでプロジェクトをトグルで開閉する
-:nmap <silent> <Space>P <Plug>ToggleProject
+" :nmap <silent> <Space>P <Plug>ToggleProject
 
-" <Space>pでデフォルトプロジェクトを開く
-:nmap <silent> <Space>p :Project<CR>
+" " <Space>pでデフォルトプロジェクトを開く
+" :nmap <silent> <Space>p :Project<CR>
 
-"カレントディレクトリにプロジェクト管理ファイルがあったら読み込む
-if getcwd() != $HOME
-  if filereadable(getcwd() . '/.vimprojects')
-      Project .vimprojects
-  endif
-endif
+" "カレントディレクトリにプロジェクト管理ファイルがあったら読み込む
+" if getcwd() != $HOME
+  " if filereadable(getcwd() . '/.vimprojects')
+      " Project .vimprojects
+  " endif
+" endif
