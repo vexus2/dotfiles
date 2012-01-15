@@ -80,4 +80,8 @@ Bundle 'gmarik/vundle'
 Bundle "git://github.com/Shougo/vim-easymotion.git"
 Bundle "mrkn256.vim"
 Bundle "git://github.com/vim-ruby/vim-ruby.git"
+Bundle "pekepeke/titanium-vim"
+Bundle 'ych/srcexpl'
+Bundle 'trinity.vim'
+Bundle 'taglist.vim'
 filetype plugin indent on

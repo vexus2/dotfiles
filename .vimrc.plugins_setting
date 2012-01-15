@@ -62,9 +62,8 @@ nmap ss <Plug>Yssurround
 "------------------------------------
 " smartchr.vim
 "------------------------------------
-inoremap <expr> = smartchr#loop('=',  ' = ',  ' == ', ' => ')
-inoremap <expr> . smartchr#loop('.',  '->', '=>')
-
+" inoremap <expr> = smartchr#loop('=',  ' = ',  ' == ', ' => ')
+" inoremap <expr> . smartchr#loop('.',  '->', '=>')
 
 "
 " " 演算子の間に空白を入れる
@@ -409,9 +408,9 @@ let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 " NERDTreeToggle
 "-----------------------------------
 " Space2回でツリー表示
-nmap <Space><Space> :NERDTreeToggle<CR>
+" TrinityToggleを使用するためコメントアウト_2012-01-15
+"nmap <Space><Space> :NERDTreeToggle<CR>
 
-autocmd VimEnter * NERDTree
 
 "-----------------------------------
 " EasyMotion
@@ -452,3 +451,29 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="sqlite3"
 
+
+"-----------------------------------
+" SourceExplorer
+"-----------------------------------
+"うざくなってきたら手動にする。またはソースを追う時だけ自動に変更する
+let g:SrcExpl_RefreshTime   = 1
+"プレビューウインドウの高さ
+let g:SrcExpl_WinHeight     = 9
+"tagsは自動で作成する
+let g:SrcExpl_UpdateTags    = 1
+let g:SrcExpl_RefreshMapKey = "<C-q>"
+let g:SrcExpl_GoBackMapKey  = "<Space>;"
+nnoremap <Space>: :SrcExplToggle<CR>
+let g:SrcExpl_pluginList = [
+         \ "__Tag_List__",
+         \ "_NERD_tree_",
+         \ "Source_Explorer"
+     \ ]
+
+"-----------------------------------
+" Trinity
+"-----------------------------------
+" Space*2でTrinityを全起動
+nmap <Space><Space> :TrinityToggleAll<CR>
+
+autocmd VimEnter * TrinityToggleAll
